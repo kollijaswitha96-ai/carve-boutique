@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Collection & Catalog | Carve Boutique Studio | Visakhapatnam</title>
+  <meta name="description" content="Browse the complete catalog of luxury bridal lehengas, pure Kanjeevaram handloom sarees, bespoke maggam work blouses, and festive designer wear at Carve Boutique Studio." />
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              100: '#FBF4E2',
+              200: '#F4E3B9',
+              300: '#E8CA83',
+              400: '#D9B055',
+              500: '#C5932D',
+              600: '#A4731D',
+              700: '#7E5316'
+            },
+            couture: {
+              cream: '#FAF8F5',
+              dark: '#12100E',
+              card: '#1A1714',
+              rose: '#9E4759',
+              emerald: '#1C3A2B'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FBF4E2 0%, #D9B055 50%, #A4731D 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-dark {
+      background: rgba(18, 16, 14, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(217, 176, 85, 0.15);
+    }
+    .product-card {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 25px 50px -12px rgba(197, 147, 45, 0.18);
+    }
+  </style>
+</head>
+<body class="bg-couture-dark text-slate-100 font-sans selection:bg-gold-500 selection:text-black antialiased overflow-x-hidden min-h-screen flex flex-col justify-between">
+
+  <!-- TOP AGENCY BRANDING HEADER (LINKS TO HIVECLICKS.COM) -->
+  <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border-b border-gold-500/30 py-2.5 px-4 text-center text-xs text-slate-300 flex items-center justify-center flex-wrap gap-2 sticky top-0 z-[60]">
+    <div class="flex items-center space-x-2">
+      <img src="hiveclicks-logo.png" alt="HiveClicks Logo" class="h-5 w-auto object-contain rounded bg-white/10 p-0.5">
+      <span class="font-bold text-white tracking-wide">Designed & Powered by <a href="https://hiveclicks.com/" target="_blank" class="text-amber-400 underline hover:text-amber-300">HiveClicks</a></span>
+    </div>
+    <span class="hidden md:inline text-slate-500">•</span>
+    <span class="text-slate-400">Digital Marketing & Growth Engine for <strong>Carve Boutique Studio</strong></span>
+    <a href="https://hiveclicks.com/" target="_blank" class="inline-flex items-center space-x-1 bg-amber-500 hover:bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full font-bold text-[11px] transition">
+      <span>Visit HiveClicks.com</span>
+      <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+    </a>
+  </div>
+
+  <!-- PERFECT LUXURY HEADER -->
+  <header class="sticky top-10 z-50 glass-dark border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="group flex items-center space-x-3">
+        <div class="w-11 h-11 rounded-full border border-gold-400/40 bg-gradient-to-tr from-gold-600/30 to-gold-400/10 flex items-center justify-center text-gold-300 shadow-inner group-hover:border-gold-400 transition">
+          <span class="font-serif text-2xl font-bold italic">C</span>
+        </div>
+        <div>
+          <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-white block">CARVE</span>
+          <span class="text-[9px] uppercase tracking-[0.3em] text-gold-400/90 font-semibold block">Boutique Studio • Vizag</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-slate-300">
+        <a href="index.html" class="hover:text-gold-400 transition">Home</a>
+        <a href="catalog.html" class="text-gold-400 border-b-2 border-gold-400 pb-1 transition">Full Catalog</a>
+        <a href="bridal.html" class="hover:text-gold-400 transition">Bridal Couture</a>
+        <a href="index.html#studio" class="hover:text-gold-400 transition">Studio Location</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center space-x-4">
+        <!-- Currency Toggle -->
+        <button id="currency-toggle" class="text-xs font-semibold px-2.5 py-1 rounded-md border border-slate-700 bg-slate-900 text-gold-300 hover:border-gold-400 transition">
+          <span id="current-currency">INR (₹)</span>
+        </button>
+
+        <!-- Cart Trigger -->
+        <button id="cart-btn" class="relative p-2.5 rounded-full hover:bg-slate-800 transition text-slate-200">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-gold-500 text-slate-950 text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow-lg">0</span>
+        </button>
+
+        <!-- Consultation Button -->
+        <a href="bridal.html" class="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-slate-950 font-bold px-4 py-2 rounded-full text-xs uppercase tracking-wider transition shadow-lg shadow-gold-500/20">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          <span>Book Fitting</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- PAGE HEADER & BREADCRUMB -->
+  <section class="py-12 bg-slate-950 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-2 text-xs text-slate-400 mb-3">
+        <a href="index.html" class="hover:text-gold-400 transition">Home</a>
+        <span>/</span>
+        <span class="text-gold-300 font-semibold">Complete Designer Catalog</span>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h1 class="font-serif text-3xl sm:text-5xl font-bold text-white">The Complete Couture Portfolio</h1>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-xl">
+            Explore every handcrafted bridal lehenga, heirloom Kanjeevaram silk, custom maggam work blouse, and festive ensemble curated at our Visakhapatnam atelier.
+          </p>
+        </div>
+        <div class="text-xs text-slate-400">
+          Showing <span id="item-count-display" class="font-bold text-gold-300">12</span> Bespoke Creations
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH & FILTER TOOLBAR -->
+  <section class="py-6 border-b border-slate-800/80 bg-couture-card/80 sticky top-30 z-30 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-4 items-center justify-between">
+      
+      <!-- Instant Search -->
+      <div class="relative w-full md:w-80">
+        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+        <input type="text" id="catalog-search" placeholder="Search lehengas, silk, maggam..." class="w-full bg-slate-950 border border-slate-800 rounded-full pl-10 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-gold-500 transition">
+      </div>
+
+      <!-- Categories Pills -->
+      <div class="flex items-center space-x-2 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 no-scrollbar">
+        <button class="filter-tab active bg-gold-500 text-slate-950 font-bold px-4 py-2 rounded-full text-xs uppercase tracking-wider transition" data-filter="all">All</button>
+        <button class="filter-tab bg-slate-900 border border-slate-800 text-slate-400 hover:text-white px-4 py-2 rounded-full text-xs uppercase tracking-wider transition" data-filter="bridal">Bridal Lehengas</button>
+        <button class="filter-tab bg-slate-900 border border-slate-800 text-slate-400 hover:text-white px-4 py-2 rounded-full text-xs uppercase tracking-wider transition" data-filter="sarees">Silk Sarees</button>
+        <button class="filter-tab bg-slate-900 border border-slate-800 text-slate-400 hover:text-white px-4 py-2 rounded-full text-xs uppercase tracking-wider transition" data-filter="blouses">Maggam Blouses</button>
+        <button class="filter-tab bg-slate-900 border border-slate-800 text-slate-400 hover:text-white px-4 py-2 rounded-full text-xs uppercase tracking-wider transition" data-filter="anarkali">Anarkali & Pret</button>
+      </div>
+
+      <!-- Sort Dropdown -->
+      <div class="flex items-center space-x-2 w-full md:w-auto justify-end">
+        <span class="text-xs text-slate-400">Sort By:</span>
+        <select id="sort-select" class="bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-gold-500">
+          <option value="featured">Featured Atelier</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CATALOG GRID -->
+  <main class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-1">
+    <div id="catalog-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <!-- Injected Dynamically by JavaScript -->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 py-12 text-slate-400 text-xs mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-full border border-gold-400/40 flex items-center justify-center text-gold-300 font-serif font-bold italic">C</div>
+          <span class="font-serif text-xl font-bold text-white">CARVE BOUTIQUE STUDIO</span>
+        </div>
+        <div class="flex items-center space-x-6 text-xs uppercase tracking-wider">
+          <a href="index.html" class="hover:text-gold-400 transition">Home</a>
+          <a href="catalog.html" class="text-gold-400 transition font-bold">Catalog</a>
+          <a href="bridal.html" class="hover:text-gold-400 transition">Bridal Couture</a>
+          <a href="index.html#studio" class="hover:text-gold-400 transition">Dwaraka Nagar Studio</a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
+        <p>&copy; <span id="year"></span> Carve Boutique Studio. Dwaraka Nagar, Visakhapatnam.</p>
+        <p class="flex items-center space-x-1.5">
+          <img src="hiveclicks-logo.png" alt="HiveClicks Logo" class="h-4 w-auto object-contain rounded bg-white/10 p-0.5">
+          <span>Engineered & Marketed by</span>
+          <a href="https://hiveclicks.com/" target="_blank" class="text-amber-400 font-bold hover:underline">HiveClicks</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING AGENCY BADGE -->
+  <div class="fixed bottom-6 left-6 z-40">
+    <a href="https://hiveclicks.com/" target="_blank" class="glass-dark hover:bg-slate-900/90 border border-gold-500/40 text-white px-3.5 py-2 rounded-full shadow-2xl flex items-center space-x-2 transition transform hover:scale-105 group">
+      <img src="hiveclicks-logo.png" alt="HiveClicks Logo" class="h-5 w-auto object-contain rounded bg-white/10 p-0.5">
+      <span class="text-[11px] font-semibold text-slate-300 group-hover:text-gold-300">Designed by <strong class="text-amber-400">HiveClicks</strong></span>
+      <i data-lucide="external-link" class="w-3 h-3 text-slate-400 group-hover:text-gold-400"></i>
+    </a>
+  </div>
+
+  <!-- SLIDE-OVER CART DRAWER -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none transition duration-500 opacity-0">
+    <div id="cart-backdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm transition"></div>
+    <div class="absolute top-0 right-0 h-full w-full max-w-md bg-couture-card border-l border-gold-500/30 p-6 flex flex-col justify-between shadow-2xl transform translate-x-full transition duration-500 pointer-events-auto" id="cart-panel">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-gold-400"></i>
+            <h3 class="font-serif text-lg font-bold text-white">Your Couture Bag</h3>
+          </div>
+          <button id="close-cart-btn" class="p-2 text-slate-400 hover:text-white transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div id="cart-items-container" class="py-6 space-y-4 max-h-[55vh] overflow-y-auto pr-1"></div>
+      </div>
+      <div class="border-t border-slate-800 pt-4 space-y-4">
+        <div class="flex justify-between items-center text-sm">
+          <span class="text-slate-400 font-medium">Estimated Subtotal:</span>
+          <span class="font-bold text-lg text-gold-300" id="cart-subtotal">₹0</span>
+        </div>
+        <button id="whatsapp-checkout-btn" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-600/20 transition">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Order via WhatsApp & Custom Sizing</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK VIEW MODAL -->
+  <div id="quickview-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-md">
+    <div class="bg-couture-card border border-gold-500/40 rounded-3xl max-w-3xl w-full p-6 sm:p-8 relative overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeQuickView()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-white transition">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center" id="quickview-content"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const FULL_CATALOG = [
+      {
+        id: 1,
+        title: "The Maharani Crimson Lehenga",
+        category: "bridal",
+        tag: "Hand-Embroidered Zardozi",
+        inr: 54000,
+        usd: 650,
+        image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+        description: "Pure raw silk lehenga with antique gold marodi wire, dabka, Swarovski crystals, and dual organza dupattas."
+      },
+      {
+        id: 2,
+        title: "Emerald Korvai Silk Saree",
+        category: "sarees",
+        tag: "Handloom Pure Silk",
+        inr: 26500,
+        usd: 320,
+        image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80",
+        description: "Authentic Kanjeevaram pure silk with contrast ruby red temple border and gold zari peacock pallu."
+      },
+      {
+        id: 3,
+        title: "Royal Peacock Maggam Blouse",
+        category: "blouses",
+        tag: "Hand-Cut Maggam Work",
+        inr: 11500,
+        usd: 140,
+        image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80",
+        description: "Embossed gold peacock wirework, cutdana pearls, and deep illusion back with handcrafted latkans."
+      },
+      {
+        id: 4,
+        title: "Powder Blue Flared Anarkali",
+        category: "anarkali",
+        tag: "Georgette & Mirror Work",
+        inr: 18500,
+        usd: 225,
+        image: "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=800&q=80",
+        description: "32-kali flared silhouette with authentic mirror work bodice and scalloped organza dupatta."
+      },
+      {
+        id: 5,
+        title: "Golden Ochre Tissue Bridal Lehenga",
+        category: "bridal",
+        tag: "Tissue Silk & Gotapatti",
+        inr: 68000,
+        usd: 820,
+        image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=800&q=80",
+        description: "Lustrous metallic tissue silk hand-embroidered with floral gotapatti, sequins, and rose gold threadwork."
+      },
+      {
+        id: 6,
+        title: "Midnight Royal Blue Banarasi Saree",
+        category: "sarees",
+        tag: "Banarasi Katan Silk",
+        inr: 29000,
+        usd: 350,
+        image: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
+        description: "Hand-loomed Banarasi katan silk featuring intricate floral shikargah motifs in antique silver and gold zari."
+      },
+      {
+        id: 7,
+        title: "Temple Kundan Work Designer Blouse",
+        category: "blouses",
+        tag: "Kundan & Zari Artwork",
+        inr: 13500,
+        usd: 165,
+        image: "https://images.unsplash.com/photo-1518049362265-d5b2a6467637?auto=format&fit=crop&w=800&q=80",
+        description: "Goddess Lakshmi temple motif centerpiece with un-cut kundan stones and rich elbow sleeves."
+      },
+      {
+        id: 8,
+        title: "Dusty Rose Hand-Embroidered Gown",
+        category: "anarkali",
+        tag: "Reception Couture",
+        inr: 24500,
+        usd: 295,
+        image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80",
+        description: "Floor-length tulle gown layered with French lace and shimmering micro-beads for sangeet and cocktail nights."
+      },
+      {
+        id: 9,
+        title: "Rani Pink Velvet Bridal Lehenga",
+        category: "bridal",
+        tag: "Winter Bridal Velvet",
+        inr: 72000,
+        usd: 870,
+        image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
+        description: "Heavy Italian velvet in vibrant rani pink adorned with heritage pita work, zardozi, and micro-crystals."
+      },
+      {
+        id: 10,
+        title: "Pastel Mint Organza Designer Saree",
+        category: "sarees",
+        tag: "Handpainted Organza",
+        inr: 16500,
+        usd: 200,
+        image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80",
+        description: "Lightweight sheer organza handpainted with botanical peonies and finished with cutwork embroidery borders."
+      },
+      {
+        id: 11,
+        title: "Scalloped Pearl Cutwork Blouse",
+        category: "blouses",
+        tag: "Freshwater Pearl Detailing",
+        inr: 9800,
+        usd: 120,
+        image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80",
+        description: "Minimalist yet regal scalloped neckline adorned with natural freshwater seed pearls on raw silk."
+      },
+      {
+        id: 12,
+        title: "Mustard Haldi Chanderi Kurta Set",
+        category: "anarkali",
+        tag: "Haldi & Mehendi Edit",
+        inr: 14500,
+        usd: 175,
+        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+        description: "Pure Chanderi silk straight kurta set with zardozi collar and contrasting gota-lined palazzo pants."
+      }
+    ];
+
+    let isUSD = false;
+    let currentFilter = 'all';
+    let searchQuery = '';
+    let sortMode = 'featured';
+
+    const currencyToggle = document.getElementById('currency-toggle');
+    const currentCurrency = document.getElementById('current-currency');
+    const catalogGrid = document.getElementById('catalog-products-grid');
+    const itemCountDisplay = document.getElementById('item-count-display');
+    const searchInput = document.getElementById('catalog-search');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const sortSelect = document.getElementById('sort-select');
+
+    currencyToggle.addEventListener('click', () => {
+      isUSD = !isUSD;
+      currentCurrency.textContent = isUSD ? "USD ($)" : "INR (₹)";
+      renderCatalog();
+      renderCart();
+    });
+
+    function formatPrice(inr, usd) {
+      return isUSD ? `$${usd.toLocaleString()}` : `₹${inr.toLocaleString()}`;
+    }
+
+    function renderCatalog() {
+      let filtered = FULL_CATALOG.filter(item => {
+        const matchesFilter = currentFilter === 'all' || item.category === currentFilter;
+        const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                              item.tag.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                              item.description.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesFilter && matchesSearch;
+      });
+
+      if (sortMode === 'price-low') {
+        filtered.sort((a, b) => (isUSD ? a.usd - b.usd : a.inr - b.inr));
+      } else if (sortMode === 'price-high') {
+        filtered.sort((a, b) => (isUSD ? b.usd - a.usd : b.inr - a.inr));
+      }
+
+      itemCountDisplay.textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        catalogGrid.innerHTML = `
+          <div class="col-span-full text-center py-20 text-slate-500">
+            <i data-lucide="search-x" class="w-12 h-12 mx-auto stroke-1 mb-3 text-slate-600"></i>
+            <p class="text-base text-slate-300 font-serif">No couture pieces found matching "${searchQuery}"</p>
+            <button onclick="resetFilters()" class="mt-4 text-xs font-bold text-gold-400 underline">Reset Search & Filters</button>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      let html = '';
+      filtered.forEach(p => {
+        html += `
+          <div class="product-card group bg-couture-card rounded-2xl border border-slate-800/80 overflow-hidden flex flex-col">
+            <div class="relative h-96 overflow-hidden bg-slate-900 cursor-pointer" onclick="openQuickView(${p.id})">
+              <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+              <span class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur border border-gold-400/30 text-gold-300 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md tracking-wider">${p.tag}</span>
+              <button class="absolute bottom-3 right-3 p-2.5 rounded-full bg-slate-950/80 backdrop-blur text-white hover:text-gold-400 transition" onclick="event.stopPropagation(); openQuickView(${p.id})">
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <p class="text-[10px] text-gold-400/80 uppercase tracking-widest font-semibold mb-1">${p.category.toUpperCase()}</p>
+                <h3 class="font-serif text-lg font-bold text-white group-hover:text-gold-300 transition">${p.title}</h3>
+                <p class="text-xs text-slate-400 mt-1 line-clamp-2">${p.description}</p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-bold text-gold-300">${formatPrice(p.inr, p.usd)}</span>
+                </div>
+                <button onclick="addToCart(${p.id})" class="bg-gold-500 hover:bg-gold-400 text-slate-950 px-3.5 py-2 rounded-xl text-xs font-bold transition flex items-center space-x-1">
+                  <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      catalogGrid.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      renderCatalog();
+    });
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('active', 'bg-gold-500', 'text-slate-950', 'font-bold');
+          t.classList.add('bg-slate-900', 'text-slate-400');
+        });
+        tab.classList.add('active', 'bg-gold-500', 'text-slate-950', 'font-bold');
+        tab.classList.remove('bg-slate-900', 'text-slate-400');
+
+        currentFilter = tab.getAttribute('data-filter');
+        renderCatalog();
+      });
+    });
+
+    sortSelect.addEventListener('change', (e) => {
+      sortMode = e.target.value;
+      renderCatalog();
+    });
+
+    function resetFilters() {
+      searchQuery = '';
+      currentFilter = 'all';
+      searchInput.value = '';
+      filterTabs.forEach(t => {
+        t.classList.remove('active', 'bg-gold-500', 'text-slate-950', 'font-bold');
+        t.classList.add('bg-slate-900', 'text-slate-400');
+      });
+      filterTabs[0].classList.add('active', 'bg-gold-500', 'text-slate-950', 'font-bold');
+      filterTabs[0].classList.remove('bg-slate-900', 'text-slate-400');
+      renderCatalog();
+    }
+
+    // CART
+    let cart = [];
+    const cartDrawer = document.getElementById('cart-drawer');
+    const cartPanel = document.getElementById('cart-panel');
+    const cartBackdrop = document.getElementById('cart-backdrop');
+    const cartBtn = document.getElementById('cart-btn');
+    const closeCartBtn = document.getElementById('close-cart-btn');
+    const cartCountBadge = document.getElementById('cart-count-badge');
+    const cartItemsContainer = document.getElementById('cart-items-container');
+    const cartSubtotal = document.getElementById('cart-subtotal');
+    const whatsappCheckoutBtn = document.getElementById('whatsapp-checkout-btn');
+
+    function toggleCart(show) {
+      if (show) {
+        cartDrawer.classList.remove('opacity-0', 'pointer-events-none');
+        cartDrawer.classList.add('opacity-100');
+        cartPanel.classList.remove('translate-x-full');
+      } else {
+        cartDrawer.classList.add('opacity-0', 'pointer-events-none');
+        cartDrawer.classList.remove('opacity-100');
+        cartPanel.classList.add('translate-x-full');
+      }
+    }
+
+    cartBtn.addEventListener('click', () => toggleCart(true));
+    closeCartBtn.addEventListener('click', () => toggleCart(false));
+    cartBackdrop.addEventListener('click', () => toggleCart(false));
+
+    function addToCart(productId) {
+      const prod = FULL_CATALOG.find(p => p.id === productId);
+      const existing = cart.find(item => item.id === productId);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ ...prod, qty: 1 });
+      }
+      renderCart();
+      toggleCart(true);
+    }
+
+    function changeQty(productId, delta) {
+      const item = cart.find(i => i.id === productId);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.id !== productId);
+      }
+      renderCart();
+    }
+
+    function renderCart() {
+      const totalCount = cart.reduce((acc, i) => acc + i.qty, 0);
+      cartCountBadge.textContent = totalCount;
+
+      let subtotalINR = 0;
+      let subtotalUSD = 0;
+
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = `
+          <div class="text-center py-12 text-slate-500">
+            <i data-lucide="shopping-bag" class="w-12 h-12 mx-auto stroke-1 mb-2 text-slate-600"></i>
+            <p class="text-sm">Your couture bag is empty.</p>
+          </div>
+        `;
+        cartSubtotal.textContent = isUSD ? "$0" : "₹0";
+      } else {
+        let itemsHtml = '';
+        cart.forEach(item => {
+          subtotalINR += item.inr * item.qty;
+          subtotalUSD += item.usd * item.qty;
+          const displayPrice = isUSD ? `$${(item.usd * item.qty).toLocaleString()}` : `₹${(item.inr * item.qty).toLocaleString()}`;
+
+          itemsHtml += `
+            <div class="flex items-center space-x-3 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+              <img src="${item.image}" alt="${item.title}" class="w-16 h-20 object-cover rounded-lg">
+              <div class="flex-1">
+                <h4 class="font-serif text-xs font-bold text-white leading-tight">${item.title}</h4>
+                <p class="text-[10px] text-gold-400 mt-0.5">${item.tag}</p>
+                <div class="flex items-center justify-between mt-2">
+                  <div class="flex items-center space-x-2 bg-slate-950 px-2 py-1 rounded-md border border-slate-800 text-xs">
+                    <button onclick="changeQty(${item.id}, -1)" class="text-slate-400 hover:text-white">-</button>
+                    <span class="font-bold text-white px-1">${item.qty}</span>
+                    <button onclick="changeQty(${item.id}, 1)" class="text-slate-400 hover:text-white">+</button>
+                  </div>
+                  <span class="text-xs font-bold text-gold-300">${displayPrice}</span>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+        cartItemsContainer.innerHTML = itemsHtml;
+        cartSubtotal.textContent = isUSD ? `$${subtotalUSD.toLocaleString()}` : `₹${subtotalINR.toLocaleString()}`;
+      }
+      lucide.createIcons();
+    }
+
+    whatsappCheckoutBtn.addEventListener('click', () => {
+      if (cart.length === 0) {
+        alert("Your couture bag is empty.");
+        return;
+      }
+      let summary = "Hello Carve Boutique Studio (Vizag)! I would like to order from the catalog:\n\n";
+      cart.forEach((i, idx) => {
+        const pr = isUSD ? `$${i.usd * i.qty}` : `₹${(i.inr * i.qty).toLocaleString()}`;
+        summary += `${idx + 1}. ${i.title} (Qty: ${i.qty}) - ${pr}\n`;
+      });
+      summary += `\nEstimated Total: ${cartSubtotal.textContent}\n`;
+      summary += "\nPlease guide me through custom sizing, measurements, and shipping.";
+
+      window.open(`https://wa.me/?text=${encodeURIComponent(summary)}`, '_blank');
+    });
+
+    // QUICKVIEW
+    const quickviewModal = document.getElementById('quickview-modal');
+    const quickviewContent = document.getElementById('quickview-content');
+
+    function openQuickView(id) {
+      const prod = FULL_CATALOG.find(p => p.id === id);
+      const priceText = formatPrice(prod.inr, prod.usd);
+
+      quickviewContent.innerHTML = `
+        <div class="h-96 sm:h-[420px] rounded-2xl overflow-hidden bg-slate-900">
+          <img src="${prod.image}" alt="${prod.title}" class="w-full h-full object-cover">
+        </div>
+        <div class="space-y-4">
+          <span class="text-gold-400 uppercase tracking-widest text-[10px] font-bold">${prod.tag}</span>
+          <h3 class="font-serif text-2xl font-bold text-white leading-tight">${prod.title}</h3>
+          <p class="text-2xl font-bold text-gold-300">${priceText}</p>
+          <p class="text-xs text-slate-300 leading-relaxed">${prod.description}</p>
+          
+          <div class="border-y border-slate-800 py-3 space-y-2 text-xs text-slate-400">
+            <p>✓ <strong>Fitting:</strong> Complimentary bespoke sizing & alterations.</p>
+            <p>✓ <strong>Fabric:</strong> Certified Handloom Silks & Pure Mulberry Silk.</p>
+            <p>✓ <strong>Delivery:</strong> Express shipping across India & Worldwide.</p>
+          </div>
+
+          <div class="flex items-center space-x-3 pt-2">
+            <button onclick="addToCart(${prod.id}); closeQuickView();" class="flex-1 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-slate-950 font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition">
+              Add To Bag
+            </button>
+            <a href="bridal.html" class="glass-dark hover:bg-slate-800 text-white border border-gold-500/40 px-4 py-3 rounded-xl text-xs font-semibold text-center">
+              Book Fitting
+            </a>
+          </div>
+        </div>
+      `;
+      quickviewModal.classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeQuickView() {
+      quickviewModal.classList.add('hidden');
+    }
+
+    renderCatalog();
+  </script>
+</body>
+</html>
